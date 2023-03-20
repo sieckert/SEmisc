@@ -1,0 +1,266 @@
+[Header]																																																																		
+Data File Name	C:\path\to\files\sample_1.qgd																																																																	
+Output Date	01.03.2022																																																																	
+Output Time	03:22:15																																																																	
+																																																																		
+[MS Quantitative Results]																																																																		
+# of IDs	80																																																																	
+ID#	Name	Type	ISTD Group#	Mass	Ret.Time	Start Time	End Time	A/H	Area	Height	Conc.	Mode	Peak#	Std.Ret.Time	Calibration Curve	3rd	2nd	1st	Constant	Ref.Ion Area	Ref.Ion Height	Ref.Ion Set Ratio	Ref.Ion Ratio	Recovery	SI	Ref.Ion1 m/z	Ref.Ion1 Area	Ref.Ion1 Height	Ref.Ion1 Set Ratio	Ref.Ion1 Ratio	Ref.Ion2 m/z	Ref.Ion2 Area	Ref.Ion2 Height	Ref.Ion2 Set Ratio	Ref.Ion2 Ratio	Ref.Ion3 m/z	Ref.Ion3 Area	Ref.Ion3 Height	Ref.Ion3 Set Ratio	Ref.Ion3 Ratio	Ref.Ion4 m/z	Ref.Ion4 Area	Ref.Ion4 Height	Ref.Ion4 Set Ratio	Ref.Ion4 Ratio	Ref.Ion5 m/z	Ref.Ion5 Area	Ref.Ion5 Height	Ref.Ion5 Set Ratio	Ref.Ion5 Ratio	Ret. Index	S/N	Unit	Description	Threshold	Tailing	Ref.Ion1 S/N	Ref.Ion2 S/N	Ref.Ion3 S/N	Ref.Ion4 S/N	Ref.Ion5 S/N	ISTD Name	ISTD Area	ISTD Height	ISTD Ret.Time	Noise
+1	.E_Hexadec_2_enal 	Target	0	43	Not Identified									8.78																																						7.2														24376.5
+2	".delta._Terpineol, acetate "	Target	0	43	Not Identified									10.51																																						9.14														69551.05
+3	"1_Penten_3_ol, 1_phenyl_ "	Target	0	133	15.598	15.56	15.64	1.37	884977	643922	0	Auto	14	15.583						0	0	82.01	86.4	0	98	162	0	0	82.01	86.4	134	0	0	50.79	52.01	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1368	181.98	ppm		0	0.984										3538.429
+4	2_Ethyl_1_hexanol	Target	0	57	10.199	10.15	10.237	1.84	4156657	2254492	0	Auto	18	10.18						0	0	32.95	29.86	0	97	41	0	0	32.95	29.86	43	0	0	29.03	28.04	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1030	15.2	ppm		0	0.914										148349.552
+5	2_Ethylhexanal	Target	0	57	Not Identified									8.67																																						0.84														26441.062
+6	3_Methylapopinene	Target	0	93	8.229	8.163	8.327	3.67	731780	199521	0	Auto	28	8.193						0	0	37.61	37.96	0	97	92	0	0	37.61	37.96	91	0	0	35.12	35.9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	924	19.13	ppm		0	1.167										10428.857
+7	"4_Carene, (1S,3R,6R)_(_)_ "	Target	0	93	Not Identified									8.213																																						19.13														10428.857
+8	"Acetate <hexyl_, 2_ethyl_>"	Target	0	43	12.291	12.26	12.327	1.4	429520	306796	0	Auto	38	12.277						0	0	55.25	82.75	0	89	70	0	0	55.25	82.75	57	0	0	53.38	53.05	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1148	12.24	ppm		0	0.994										25056.429
+9	Acetophenone	Target	0	105	10.984	10.947	11.027	1.81	906641	501674	0	Auto	44	10.963						0	0	65.02	67.36	0	97	77	0	0	65.02	67.36	120	0	0	32.2	33.03	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1072	34.11	ppm		0	1.021										14708.75
+10	Artemisia acetate	Target	0	127	Not Identified									12.597																																						0.34														32448.2
+11	Artemisia alcohol	Target	0	86	Not Identified									11.25																																						2.25														11125.06
+12	Artemisia ketone	Target	0	84	Not Identified									10.833																																						2.68														18693.667
+13	Benmoxin 	Target	0	105	8.841	8.777	8.877	2.71	419736	155054	0	Auto	62	8.827						0	0	40.95	39.19	0	96	120	0	0	40.95	39.19	91	0	0	10.44	11.66	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	957	52.61	ppm		0	0.895										2947.111
+14	Benzaldehyde	Target	0	105	8.919	8.877	8.977	3	762511	254147	0	Auto	68	8.9						0	0	93.36	89.58	0	96	106	0	0	93.36	89.58	77	0	0	81.19	77.32	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	961	86.24	ppm		0	1.167										2947.111
+15	Benzaldehyde <para_ethoxy_>	Target	0	121	15.262	15.233	15.3	1.55	22261	14328	0	Auto	72	15.243						0	0	42.72	41.99	0	90	150	0	0	42.72	41.99	122	0	0	22.01	17.73	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1344	5.12	ppm		0	0.977										2800.951
+16	"Benzene <1,4_diacetyl_>"	Target	0	147	16.63	16.597	16.67	1.43	90067	63022	0	Auto	77	16.617						0	0	38.95	33.38	0	95	91	0	0	38.95	33.38	43	0	0	30.63	28.27	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1445	26.76	ppm		0	1.051										2354.966
+17	Benzoate <ethyl_>	Target	0	105	12.769	12.743	12.807	1.44	127111	88551	0	Auto	83	12.747						0	0	42.21	43.67	0	97	77	0	0	42.21	43.67	122	0	0	32.39	33.85	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1177	7.03	ppm		0	1.028										12595.862
+18	Benzyl alcohol 	Target	0	79	10.362	10.3	10.413	2.3	80796	35141	0	Auto	89	10.343						0	0	92.53	74.38	0	76	108	0	0	92.53	74.38	107	0	0	61.78	55.89	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1039	2.01	ppm		0	0.787										17486.656
+19	Borneol	Target	0	95	12.842	12.813	12.87	1.48	157721	106215	0	Auto	93	12.847						0	0	29.19	18.88	0	87	110	0	0	29.19	18.88	41	0	0	18.91	11.34	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1182	12.45	ppm		0	1.112										8532.563
+20	Camphene	Target	0	93	8.607	8.533	8.677	3.37	207902	61692	0	Auto	97	8.64						0	0	69.83	57.97	0	83	121	0	0	69.83	57.97	79	0	0	34.51	38.34	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	944	13.46	ppm		0	1.019										4584.588
+21	Camphor	Target	0	95	12.446	12.423	12.477	1.33	26181	19663	0	Auto	101	12.437						0	0	64.82	54.68	0	80	81	0	0	64.82	54.68	41	0	0	45.39	16.43	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1158	2.32	ppm		0	1.124										8464.845
+22	Caparratriene	Target	0	95	16.352	16.333	16.383	1.61	9677	5992	0	Auto	108	16.333						0	0	95.85	98.19	0	93	121	0	0	95.85	98.19	93	0	0	55.49	41.9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1424	1.48	ppm		0	1.328										4051.429
+23	"Carbonic acid, eicosyl vinyl ester"	Target	0	57	Not Identified									10.287																																						2.18														187297.311
+24	Carvone	Target	0	82	Not Identified									13.953																																						8.9														5057.4
+25	Carvyl acetate <cis_>	Target	0	84	Not Identified									15.537																																						0.28														14157.091
+26	Caryophyllene <beta_>	Target	0	93	16.41	16.38	16.44	1.32	33688	25522	0	Auto	128	16.507						0	0	81.49	68.05	0	88	133	0	0	81.49	68.05	41	0	0	77.07	70.08	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1428	9.03	ppm		0	1										2827.701
+27	Caryophyllene <E_>	Target	0	93	16.41	16.38	16.44	1.47	40095	27295	0	Auto	133	16.5						0	0	82.89	68.05	0	88	133	0	0	82.89	68.05	41	0	0	82.36	70.08	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1428	9.05	ppm		0	1.115										3015.032
+28	Cymene <para_>	Target	0	119	10.155	10.09	10.207	1.99	1354389	679048	0	Auto	138	10.167						0	0	70.67	32.75	0	82	134	0	0	70.67	32.75	91	0	0	55.9	25.09	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1028	81	ppm		0	0.964										8382.931
+29	"Dihydrocarveol <1,6_>"	Target	0	59	Not Identified									13.177																																						0.82														5782
+30	"Dihydrojasmonate <methyl_, cis_>"	Target	0	83	Not Identified									19.25																																						2.96														8086
+31	Dihydromyrcenol	Target	0	59	Not Identified									10.99																																						13.67														6624.2
+32	Eucalyptol	Target	0	43	Not Identified									10.33																																						0.99														59685
+33	Guaiene <alpha_>	Target	0	105	Not Identified									16.407																																						2.92														7631.49
+34	Hept_5_en_2_one <6_methyl_>	Target	0	43	9.341	9.287	9.41	2.42	760398	314149	0	Auto	167	9.33						0	0	55.18	58.15	0	94	41	0	0	55.18	58.15	108	0	0	45.6	44.45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	984	6.95	ppm		0	1.25										45199.438
+35	Heptanone<5_methyl_3_>	Target	0	43	Not Identified									8.387																																						4.37														40142.571
+36	Hex_(3Z)_enyl acetate	Target	0	43	9.732	9.69	9.78	2.1	1179427	562232	0	Auto	178	9.737						0	0	97.3	70.83	0	87	67	0	0	97.3	70.83	82	0	0	75.59	42.2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1005	7.23	ppm		0	1.045										77811.979
+37	"Hexanal, 2_ethyl_ "	Target	0	57	Not Identified									8.69																																						0.4														70434.086
+38	Hydroxy citronellyl tiglate	Target	0	83	Not Identified									8.757																																						2.39														3804.674
+39	Hydroxycitronellol	Target	0	59	Not Identified									15.4																																						6.63														2608
+40	Indan_5_ol	Target	0	133	15.11	15.073	15.153	1.4	170894	122109	0	Auto	197	15.093						0	0	81.52	79.04	0	96	162	0	0	81.52	79.04	134	0	0	52.9	51.79	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1333	0.51	ppm		0	1.054										239470.8
+41	Indane 	Target	0	117	10.376	10.327	10.423	1.98	258439	130522	0	Auto	203	10.347						0	0	60.69	61.2	0	90	118	0	0	60.69	61.2	79	0	0	40.55	14.75	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1040	18.08	ppm		0	0.969										7217.471
+42	Isopropyl myristate 	Target	0	43	Not Identified									21.08																																						2.67														8728.8
+43	Isopropyl palmitate 	Target	0	43	Not Identified									23.11																																						0.49														7653.2
+44	Limonene	Target	0	68	10.243	10.157	10.29	2.14	1303261	609826	0	Auto	219	10.267						0	0	77.6	72.62	0	97	93	0	0	77.6	72.62	67	0	0	72.7	72.32	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1032	60.94	ppm		0	0.756										10006.744
+45	"Linalool <ethyl_, (E)_>"	Target	0	55	Not Identified									13.07																																						1.21														30851.917
+46	Linalool isobutyrate	Target	0	93	10.537	10.503	10.567	1.65	27811	16840	0	Auto	228	10.527						0	0	63.02	62.31	0	87	43	0	0	63.02	62.31	41	0	0	54.41	40.81	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1048	1.73	ppm		0	0.929										9712.474
+47	Linalyl acetate	Target	0	93	Not Identified									8.193																																						19.13														10428.857
+48	Longifolene_(V4)	Target	0	57	Not Identified									15.893																																						0.9														43256.9
+49	Maaliene <gamma_>	Target	0	161	16.409	16.377	16.457	1.47	47738	32435	0	Auto	245	16.39						0	0	88.61	67.88	0	96	105	0	0	88.61	67.88	94	0	0	86.94	81.15	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1428	7.85	ppm		0	1.111										4134.292
+50	Menthol	Target	0	71	12.89	12.867	12.92	1.46	70410	48185	0	Auto	247	12.87						0	0	96.12	89.97	0	96	81	0	0	96.12	89.97	95	0	0	84.81	77.48	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1184	1.59	ppm		0	1.047										30312.55
+51	Mesitylene	Target	0	105	9.544	9.48	9.6	2.35	553205	235638	0	Auto	253	9.52						0	0	49.28	54.33	0	93	120	0	0	49.28	54.33	119	0	0	10.57	6.64	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	995	2.24	ppm		0	0.95										105039.936
+52	Methyl oxalate	Target	0	59	9.862	9.82	9.943	2.48	949871	383017	0	Auto	258	9.863						0	0	13.53	13.98	0	96	31	0	0	13.53	13.98	45	0	0	10.44	10.36	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1012	53.83	ppm		0	1.32										7115.5
+53	Myrcene	Target	0	69	Not Identified									9.447																																						13.54														23632.471
+54	Myroxide 	Target	0	79	Not Identified									12.183																																						0.92														4539.345
+55	"Nicotinonitrile, 1_ethyl_1,4_dihydro_ "	Target	0	133	Not Identified									13.537																																						7.86														5274.273
+56	Nonanal 	Target	0	57	11.613	11.587	11.65	1.56	1705788	1095021	0	Auto	279	11.593						0	0	70.64	71.54	0	99	41	0	0	70.64	71.54	56	0	0	63.27	62.68	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1107	10.78	ppm		0	0.967										101537.818
+57	Palmitate <ethyl_>	Target	0	88	Not Identified									22.83																																						3.76														515.135
+58	Pelargol	Target	0	69	11.128	11.1	11.16	1.58	102514	64922	0	Auto	289	11.03						0	0	77.69	95.07	0	93	57	0	0	77.69	95.07	43	0	0	74.01	93.66	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1080	2.34	ppm		0	1.013										27713.122
+59	Phenethyl alcohol	Target	0	91	11.807	11.783	11.83	1.4	21693	15494	0	Auto	294	11.783						0	0	60.52	58.93	0	94	92	0	0	60.52	58.93	122	0	0	27.31	22.44	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1119	1.92	ppm		0	1.03										8068
+60	Phenethyl isocyanate 	Target	0	91	19.007	18.983	19.047	1.41	133097	94289	0	Auto	297	18.993						0	0	20.07	18.43	0	93	105	0	0	20.07	18.43	147	0	0	16.25	18.41	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1636	15.38	ppm		0	0.999										6131
+61	Phytone	Target	0	43	Not Identified									21.31																																						0.79														10429
+62	Pinene <alpha_>	Target	0	93	8.229	8.163	8.327	3.67	731780	199521	0	Auto	306	8.27						0	0	40.31	37.96	0	96	92	0	0	40.31	37.96	91	0	0	39.27	35.9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	924	18.62	ppm		0	1.167										10715.935
+63	Sabinene	Target	0	93	Not Identified									9.117																																						0.21														44719.444
+64	Sabinene hydrate <cis_>	Target	0	43	Not Identified									11.037																																						0.94														109235
+65	Sabinol isovalerate 	Target	0	91	17.943	17.917	17.977	1.39	52049	37401	0	Auto	324	17.923						0	0	25.57	25.32	0	84	133	0	0	25.57	25.32	105	0	0	11.68	11.41	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1548	4.5	ppm		0	1.029										8319.286
+66	Salicylate <2_ethylhexyl_>	Target	0	120	Not Identified									21																																						4.6														1983.125
+67	Salicylate <hexyl_>	Target	0	120	19.633	19.597	19.667	1.41	56031	39645	0	Auto	335	19.617						0	0	45.07	40.74	0	88	138	0	0	45.07	40.74	121	0	0	24.18	13.45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1690	26.48	ppm		0	1.037										1497.202
+68	Salicylate <methyl_>	Target	0	120	13.163	13.13	13.187	1.6	33400	20916	0	Auto	337	13.153						0	0	57.38	60.88	0	90	92	0	0	57.38	60.88	152	0	0	50.95	49.56	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1201	20.5	ppm		0	0.984										1020.341
+69	Stearate <ethyl_>	Target	0	88	Not Identified									24.72																																						0.49														524.52
+70	"Succinic acid, 2,2_dimethylpent_3_yl 2_methylhex_3_yl ester"	Target	0	99	Not Identified									10.123																																						1.66														9359.48
+71	Terpineol <alpha_>	Target	0	59	Not Identified									13.173																																						0.82														5782
+72	Thujene <alpha_>	Target	0	93	8.229	8.163	8.327	3.67	731780	199521	0	Auto	358	8.2						0	0	38.17	37.96	0	97	92	0	0	38.17	37.96	91	0	0	34.72	35.9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	924	19.13	ppm		0	1.167										10428.857
+73	Thujone <beta_>	Target	0	110	11.899	11.827	11.94	1.63	554781	340864	0	Auto	364	11.877						0	0	84.63	87.73	0	96	81	0	0	84.63	87.73	95	0	0	75.89	79.94	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1124	192.93	ppm		0	0.993										1766.744
+74	Toscanol	Target	0	121	Not Identified									15.447																																						0.83														3299.526
+75	trans_Geranylacetone	Target	0	43	16.876	16.79	16.913	3.15	147621	46868	0	Auto	371	16.72						0	0	41.53	15.25	0	77	69	0	0	41.53	15.25	41	0	0	34.31	48.19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1464	0.79	ppm		0	0.674										59342.187
+76	trans_Sesquisabinene hydrate 	Target	0	85	Not Identified									18.883																																						1.38														20659.121
+77	Unknown_KI_943	Target	0	95	8.594	8.543	8.667	2.67	287689	107850	0	Auto	381	8.573						0	0	41.33	48.61	0	94	93	0	0	41.33	48.61	67	0	0	34.05	41.91	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	944	15.54	ppm		0	1.201										6938.636
+78	"Vanillin, 2_methylpropyl ether"	Target	0	151	Not Identified									16.15																																						6.22														845.605
+79	"Vanillin, isopropyl ether"	Target	0	151	Not Identified									16.16																																						6.22														845.605
+80	Verdyl acetate	Target	0	66	16.488	16.447	16.527	1.7	25117	14763	0	Auto	398	16.467						0	0	71.07	49.63	0	93	59	0	0	71.07	49.63	43	0	0	70.54	82.21	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1434	14.27	ppm		0	1.008										1034.846
+																																																																		
+[Header]																																																																		
+Data File Name	C:\path\to\files\sample_2.qgd																																																																	
+Output Date	01.03.2022																																																																	
+Output Time	03:22:18																																																																	
+																																																																		
+[MS Quantitative Results]																																																																		
+# of IDs	80																																																																	
+ID#	Name	Type	ISTD Group#	Mass	Ret.Time	Start Time	End Time	A/H	Area	Height	Conc.	Mode	Peak#	Std.Ret.Time	Calibration Curve	3rd	2nd	1st	Constant	Ref.Ion Area	Ref.Ion Height	Ref.Ion Set Ratio	Ref.Ion Ratio	Recovery	SI	Ref.Ion1 m/z	Ref.Ion1 Area	Ref.Ion1 Height	Ref.Ion1 Set Ratio	Ref.Ion1 Ratio	Ref.Ion2 m/z	Ref.Ion2 Area	Ref.Ion2 Height	Ref.Ion2 Set Ratio	Ref.Ion2 Ratio	Ref.Ion3 m/z	Ref.Ion3 Area	Ref.Ion3 Height	Ref.Ion3 Set Ratio	Ref.Ion3 Ratio	Ref.Ion4 m/z	Ref.Ion4 Area	Ref.Ion4 Height	Ref.Ion4 Set Ratio	Ref.Ion4 Ratio	Ref.Ion5 m/z	Ref.Ion5 Area	Ref.Ion5 Height	Ref.Ion5 Set Ratio	Ref.Ion5 Ratio	Ret. Index	S/N	Unit	Description	Threshold	Tailing	Ref.Ion1 S/N	Ref.Ion2 S/N	Ref.Ion3 S/N	Ref.Ion4 S/N	Ref.Ion5 S/N	ISTD Name	ISTD Area	ISTD Height	ISTD Ret.Time	Noise
+1	.E_Hexadec_2_enal 	Target	0	43	Not Identified									8.78																																						28.64														33749.38
+2	".delta._Terpineol, acetate "	Target	0	43	Not Identified									10.51																																						4.62														205229.607
+3	"1_Penten_3_ol, 1_phenyl_ "	Target	0	133	15.597	15.567	15.633	1.36	475601	348692	0	Auto	15	15.583						0	0	82.01	81.07	0	98	162	0	0	82.01	81.07	134	0	0	50.79	52.28	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1368	23.52	ppm		0	1.016										14827.625
+4	2_Ethyl_1_hexanol	Target	0	57	10.201	10.157	10.243	1.79	5460390	3045664	0	Auto	19	10.18						0	0	32.95	33.05	0	99	41	0	0	32.95	33.05	43	0	0	29.03	28.5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1030	10.4	ppm		0	0.979										292771
+5	2_Ethylhexanal	Target	0	57	Not Identified									8.67																																						0.89														35424.375
+6	3_Methylapopinene	Target	0	93	8.229	8.153	8.313	3.68	511408	139089	0	Auto	27	8.193						0	0	37.61	37.75	0	94	92	0	0	37.61	37.75	91	0	0	35.12	35.94	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	924	57.19	ppm		0	1.122										2432.2
+7	"4_Carene, (1S,3R,6R)_(_)_ "	Target	0	93	8.229	8.153	8.313	3.68	511408	139089	0	Auto	32	8.213						0	0	47.32	18.84	0	92	43	0	0	47.32	18.84	92	0	0	38.16	37.75	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	924	57.19	ppm		0	1.122										2432.2
+8	"Acetate <hexyl_, 2_ethyl_>"	Target	0	43	Not Identified									12.277																																						2.05														70528.557
+9	Acetophenone	Target	0	105	10.983	10.94	11.04	1.83	1229126	671815	0	Auto	45	10.963						0	0	65.02	65.64	0	97	77	0	0	65.02	65.64	120	0	0	32.2	32.3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1072	183.11	ppm		0	1.033										3668.957
+10	Artemisia acetate	Target	0	127	Not Identified									12.597																																						1.1														4241.455
+11	Artemisia alcohol	Target	0	86	Not Identified									11.25																																						0.12														18144.24
+12	Artemisia ketone	Target	0	84	Not Identified									10.833																																						3.96														41851.286
+13	Benmoxin 	Target	0	105	8.843	8.793	8.87	2.42	33346	13784	0	Auto	61	8.827						0	0	40.95	42.67	0	87	120	0	0	40.95	42.67	91	0	0	10.44	8.42	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	957	4.66	ppm		0	0.806										2957.682
+14	Benzaldehyde	Target	0	105	8.925	8.87	8.99	2.91	376804	129408	0	Auto	67	8.9						0	0	93.36	101.81	0	93	106	0	0	93.36	101.81	77	0	0	81.19	87.64	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	962	45.5	ppm		0	0.958										2844.235
+15	Benzaldehyde <para_ethoxy_>	Target	0	121	14.81	14.78	14.843	1.57	52729	33606	0	Auto	71	15.243						0	0	42.72	44.35	0	78	150	0	0	42.72	44.35	122	0	0	22.01	21.96	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1311	6.14	ppm		0	0.98										5469.14
+16	"Benzene <1,4_diacetyl_>"	Target	0	147	16.426	16.39	16.457	1.62	64783	39985	0	Auto	76	16.617						0	0	38.95	40.06	0	94	91	0	0	38.95	40.06	43	0	0	30.63	24.64	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1429	3.13	ppm		0	0.964										12781.261
+17	Benzoate <ethyl_>	Target	0	105	12.77	12.743	12.817	1.47	122069	83116	0	Auto	83	12.747						0	0	42.21	41.78	0	96	77	0	0	42.21	41.78	122	0	0	32.39	32.8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1177	14.99	ppm		0	0.984										5545.25
+18	Benzyl alcohol 	Target	0	79	10.363	10.273	10.407	2.08	122087	58599	0	Auto	90	10.343						0	0	92.53	95.24	0	96	108	0	0	92.53	95.24	107	0	0	61.78	61.45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1039	13.38	ppm		0	0.901										4378.474
+19	Borneol	Target	0	95	Not Identified									12.847																																						7.29														15086.833
+20	Camphene	Target	0	93	8.604	8.543	8.683	3.48	61824	17790	0	Auto	97	8.64						0	0	69.83	72.86	0	86	121	0	0	69.83	72.86	79	0	0	34.51	29.75	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	944	11.84	ppm		0	1.067										1502.176
+21	Camphor	Target	0	95	Not Identified									12.437																																						2.54														16184.533
+22	Caparratriene	Target	0	95	Not Identified									16.333																																						1.59														6544.563
+23	"Carbonic acid, eicosyl vinyl ester"	Target	0	57	Not Identified									10.287																																						1.19														408770.829
+24	Carvone	Target	0	82	13.961	13.937	13.993	1.45	50459	34792	0	Auto	117	13.953						0	0	48.84	49.26	0	80	54	0	0	48.84	49.26	93	0	0	37.9	38.75	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1254	3.81	ppm		0	0.969										9136.486
+25	Carvyl acetate <cis_>	Target	0	84	Not Identified									15.537																																						0.62														13278.852
+26	Caryophyllene <beta_>	Target	0	93	16.409	16.38	16.433	1.45	16675	11504	0	Auto	126	16.507						0	0	81.49	79.16	0	85	133	0	0	81.49	79.16	41	0	0	77.07	76.85	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1428	1.9	ppm		0	0.986										6061.783
+27	Caryophyllene <E_>	Target	0	93	16.409	16.38	16.433	1.45	16675	11504	0	Auto	131	16.5						0	0	82.89	79.16	0	85	133	0	0	82.89	79.16	41	0	0	82.36	76.85	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1428	2.04	ppm		0	0.986										5637.909
+28	Cymene <para_>	Target	0	119	Not Identified									10.167																																						10.39														2132
+29	"Dihydrocarveol <1,6_>"	Target	0	59	13.182	13.11	13.213	1.52	108015	71030	0	Auto	143	13.177						0	0	63.31	70.41	0	89	93	0	0	63.31	70.41	136	0	0	43.56	47.41	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1202	6.39	ppm		0	1.186										11118
+30	"Dihydrojasmonate <methyl_, cis_>"	Target	0	83	Not Identified									19.25																																						1.41														13438.97
+31	Dihydromyrcenol	Target	0	59	11.012	10.967	11.063	1.72	2850899	1660413	0	Auto	153	10.99						0	0	18.51	14.82	0	92	55	0	0	18.51	14.82	43	0	0	17.29	11.21	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1074	164.53	ppm		0	0.981										10092.138
+32	Eucalyptol	Target	0	43	Not Identified									10.33																																						2.99														142221.75
+33	Guaiene <alpha_>	Target	0	105	Not Identified									16.407																																						1.78														6023.341
+34	Hept_5_en_2_one <6_methyl_>	Target	0	43	9.341	9.307	9.38	2.05	460906	225215	0	Auto	169	9.33						0	0	55.18	53.57	0	98	41	0	0	55.18	53.57	108	0	0	45.6	45.73	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	984	1.57	ppm		0	1.032										142999.79
+35	Heptanone<5_methyl_3_>	Target	0	43	8.39	8.327	8.473	2.88	2804941	973524	0	Auto	173	8.387						0	0	83.35	89.17	0	97	57	0	0	83.35	89.17	71	0	0	64.09	69.14	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	933	12.61	ppm		0	0.994										77179
+36	Hex_(3Z)_enyl acetate	Target	0	43	Not Identified									9.737																																						1.5														246373.605
+37	"Hexanal, 2_ethyl_ "	Target	0	57	8.699	8.68	8.733	1.66	52470	31666	0	Auto	182	8.69						0	0	90.15	84.47	0	81	72	0	0	90.15	84.47	43	0	0	45.3	28.13	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	949	0.89	ppm		0	1.282										35424.375
+38	Hydroxy citronellyl tiglate	Target	0	83	Not Identified									8.757																																						0.66														5088.8
+39	Hydroxycitronellol	Target	0	59	Not Identified									15.4																																						6.01														8936.304
+40	Indan_5_ol	Target	0	133	15.253	15.22	15.287	1.54	361783	235486	0	Auto	199	15.093						0	0	81.52	81.45	0	93	162	0	0	81.52	81.45	134	0	0	52.9	50.65	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1343	0.85	ppm		0	0.999										278203.656
+41	Indane 	Target	0	117	Not Identified									10.347																																						0.26														7517.488
+42	Isopropyl myristate 	Target	0	43	Not Identified									21.08																																						1.78														17148
+43	Isopropyl palmitate 	Target	0	43	23.127	23.103	23.167	1.53	34777	22791	0	Auto	213	23.11						0	0	77.54	73.31	0	97	60	0	0	77.54	73.31	102	0	0	75.54	73.84	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2023	0.78	ppm		0	1.313										29129.324
+44	Limonene	Target	0	68	10.243	10.223	10.283	1.78	53528	30141	0	Auto	218	10.267						0	0	77.6	93.59	0	82	93	0	0	77.6	93.59	67	0	0	72.7	69.69	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1032	5.31	ppm		0	1.246										5679.261
+45	"Linalool <ethyl_, (E)_>"	Target	0	55	Not Identified									13.07																																						1.4														103342.716
+46	Linalool isobutyrate	Target	0	93	Not Identified									10.527																																						2.01														6723.036
+47	Linalyl acetate	Target	0	93	Not Identified									8.193																																						57.19														2432.2
+48	Longifolene_(V4)	Target	0	57	Not Identified									15.893																																						1.21														39458.75
+49	Maaliene <gamma_>	Target	0	161	16.407	16.377	16.433	1.57	24159	15367	0	Auto	243	16.39						0	0	88.61	51.99	0	92	105	0	0	88.61	51.99	94	0	0	86.94	78.17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1428	1.9	ppm		0	0.986										8066.759
+50	Menthol	Target	0	71	12.888	12.863	12.923	1.58	194497	123174	0	Auto	247	12.87						0	0	96.12	92.07	0	94	81	0	0	96.12	92.07	95	0	0	84.81	77.82	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1184	1.14	ppm		0	1.026										108291.538
+51	Mesitylene	Target	0	105	9.543	9.507	9.593	2.09	46062	22008	0	Auto	253	9.52						0	0	49.28	54.38	0	92	120	0	0	49.28	54.38	119	0	0	10.57	8.83	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	995	5.59	ppm		0	1.109										3934.684
+52	Methyl oxalate	Target	0	59	9.483	9.43	9.533	2.42	796408	329397	0	Auto	256	9.863						0	0	13.53	4.95	0	86	31	0	0	13.53	4.95	45	0	0	10.44	1.41	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	992	41.24	ppm		0	0.983										7986.75
+53	Myrcene	Target	0	69	Not Identified									9.447																																						6.23														12902.08
+54	Myroxide 	Target	0	79	Not Identified									12.183																																						19.97														4719.786
+55	"Nicotinonitrile, 1_ethyl_1,4_dihydro_ "	Target	0	133	Not Identified									13.537																																						3														10679.923
+56	Nonanal 	Target	0	57	11.613	11.587	11.647	1.52	1234294	810017	0	Auto	279	11.593						0	0	70.64	72.95	0	99	41	0	0	70.64	72.95	56	0	0	63.27	63.62	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1107	5.42	ppm		0	0.956										149366.257
+57	Palmitate <ethyl_>	Target	0	88	22.849	22.82	22.87	1.46	10722	7338	0	Auto	284	22.83						0	0	48.91	53.91	0	82	101	0	0	48.91	53.91	43	0	0	27.5	27.75	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1994	7.71	ppm		0	0.913										951.563
+58	Pelargol	Target	0	69	11.051	11.027	11.087	1.62	547017	337496	0	Auto	288	11.03						0	0	77.69	86.04	0	93	57	0	0	77.69	86.04	43	0	0	74.01	70.81	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1076	6.51	ppm		0	1.039										51815.047
+59	Phenethyl alcohol	Target	0	91	11.806	11.75	11.843	1.64	45607	27750	0	Auto	294	11.783						0	0	60.52	66.35	0	93	92	0	0	60.52	66.35	122	0	0	27.31	29.4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1119	4.65	ppm		0	1.141										5970.429
+60	Phenethyl isocyanate 	Target	0	91	19.007	18.987	19.04	1.39	64340	46336	0	Auto	297	18.993						0	0	20.07	13.58	0	90	105	0	0	20.07	13.58	147	0	0	16.25	16.37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1636	7.9	ppm		0	1.095										5867.467
+61	Phytone	Target	0	43	21.308	21.297	21.35	1.1	15545	14189	0	Auto	304	21.31						0	0	90.79	88.66	0	87	58	0	0	90.79	88.66	71	0	0	53.08	18.9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1843	0.71	ppm		0	2.139										20043.805
+62	Pinene <alpha_>	Target	0	93	8.229	8.153	8.313	3.68	511408	139089	0	Auto	307	8.27						0	0	40.31	37.75	0	91	92	0	0	40.31	37.75	91	0	0	39.27	35.94	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	924	57.19	ppm		0	1.122										2432.2
+63	Sabinene	Target	0	93	Not Identified									9.117																																						0.82														12659.912
+64	Sabinene hydrate <cis_>	Target	0	43	Not Identified									11.037																																						0.9														312157
+65	Sabinol isovalerate 	Target	0	91	Not Identified									17.923																																						1.78														10107.364
+66	Salicylate <2_ethylhexyl_>	Target	0	120	Not Identified									21																																						93.48														1851.524
+67	Salicylate <hexyl_>	Target	0	120	Not Identified									19.617																																						3.46														3099.882
+68	Salicylate <methyl_>	Target	0	120	Not Identified									13.153																																						1.56														2542.488
+69	Stearate <ethyl_>	Target	0	88	Not Identified									24.72																																						5.85														807.785
+70	"Succinic acid, 2,2_dimethylpent_3_yl 2_methylhex_3_yl ester"	Target	0	99	Not Identified									10.123																																						5.8														9321.462
+71	Terpineol <alpha_>	Target	0	59	13.182	13.11	13.213	1.52	108015	71030	0	Auto	353	13.173						0	0	53.01	70.41	0	83	93	0	0	53.01	70.41	136	0	0	43.77	47.41	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1202	6.39	ppm		0	1.186										11118
+72	Thujene <alpha_>	Target	0	93	8.229	8.153	8.313	3.68	511408	139089	0	Auto	357	8.2						0	0	38.17	37.75	0	93	92	0	0	38.17	37.75	91	0	0	34.72	35.94	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	924	57.19	ppm		0	1.122										2432.2
+73	Thujone <beta_>	Target	0	110	11.899	11.853	11.943	1.59	455158	285735	0	Auto	363	11.877						0	0	84.63	85.06	0	97	81	0	0	84.63	85.06	95	0	0	75.89	77.22	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1124	174.18	ppm		0	0.992										1640.5
+74	Toscanol	Target	0	121	15.466	15.427	15.497	1.44	120650	83497	0	Auto	369	15.447						0	0	32.37	33.88	0	94	162	0	0	32.37	33.88	134	0	0	27.93	27.52	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1359	10.24	ppm		0	0.961										8154.48
+75	trans_Geranylacetone	Target	0	43	16.728	16.7	16.753	1.32	482407	364944	0	Auto	372	16.72						0	0	41.53	40.51	0	98	69	0	0	41.53	40.51	41	0	0	34.31	34.68	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1452	5.43	ppm		0	0.987										67162.535
+76	trans_Sesquisabinene hydrate 	Target	0	85	19.129	19.11	19.157	1.59	66312	41710	0	Auto	379	18.883						0	0	81.74	72.31	0	78	95	0	0	81.74	72.31	57	0	0	76.25	62.45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1647	2.32	ppm		0	1.092										17967.679
+77	Unknown_KI_943	Target	0	95	Not Identified									8.573																																						1.09														2378.313
+78	"Vanillin, 2_methylpropyl ether"	Target	0	151	15.896	15.863	15.927	1.58	26868	16966	0	Auto	386	16.15						0	0	95.18	107.04	0	82	152	0	0	95.18	107.04	57	0	0	28.47	32.26	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1389	8.1	ppm		0	1.081										2094.667
+79	"Vanillin, isopropyl ether"	Target	0	151	15.896	15.863	15.927	1.58	26868	16966	0	Auto	391	16.16						0	0	91.19	107.04	0	85	152	0	0	91.19	107.04	109	0	0	28.52	15.95	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1389	8.1	ppm		0	1.081										2094.667
+80	Verdyl acetate	Target	0	66	Not Identified									16.467																																						14.31														1223.26
+																																																																		
+[Header]																																																																		
+Data File Name	C:\path\to\files\sample_3.qgd																																																																	
+Output Date	01.03.2022																																																																	
+Output Time	03:22:21																																																																	
+																																																																		
+[MS Quantitative Results]																																																																		
+# of IDs	80																																																																	
+ID#	Name	Type	ISTD Group#	Mass	Ret.Time	Start Time	End Time	A/H	Area	Height	Conc.	Mode	Peak#	Std.Ret.Time	Calibration Curve	3rd	2nd	1st	Constant	Ref.Ion Area	Ref.Ion Height	Ref.Ion Set Ratio	Ref.Ion Ratio	Recovery	SI	Ref.Ion1 m/z	Ref.Ion1 Area	Ref.Ion1 Height	Ref.Ion1 Set Ratio	Ref.Ion1 Ratio	Ref.Ion2 m/z	Ref.Ion2 Area	Ref.Ion2 Height	Ref.Ion2 Set Ratio	Ref.Ion2 Ratio	Ref.Ion3 m/z	Ref.Ion3 Area	Ref.Ion3 Height	Ref.Ion3 Set Ratio	Ref.Ion3 Ratio	Ref.Ion4 m/z	Ref.Ion4 Area	Ref.Ion4 Height	Ref.Ion4 Set Ratio	Ref.Ion4 Ratio	Ref.Ion5 m/z	Ref.Ion5 Area	Ref.Ion5 Height	Ref.Ion5 Set Ratio	Ref.Ion5 Ratio	Ret. Index	S/N	Unit	Description	Threshold	Tailing	Ref.Ion1 S/N	Ref.Ion2 S/N	Ref.Ion3 S/N	Ref.Ion4 S/N	Ref.Ion5 S/N	ISTD Name	ISTD Area	ISTD Height	ISTD Ret.Time	Noise
+1	.E_Hexadec_2_enal 	Target	0	43	Not Identified									8.78																																						2.99														61468.377
+2	".delta._Terpineol, acetate "	Target	0	43	10.52	10.503	10.62	5.12	112071	21875	0	Auto	8	10.51						0	0	78.59	64.7	0	91	93	0	0	78.59	64.7	59	0	0	47.78	31.27	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1047	0.74	ppm		0	3.661										29554.8
+3	"1_Penten_3_ol, 1_phenyl_ "	Target	0	133	15.597	15.563	15.64	1.43	208904	146468	0	Auto	15	15.583						0	0	82.01	83.5	0	97	162	0	0	82.01	83.5	134	0	0	50.79	54.01	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1368	36.15	ppm		0	1.017										4051.512
+4	2_Ethyl_1_hexanol	Target	0	57	10.2	10.157	10.24	1.87	928453	496690	0	Auto	19	10.18						0	0	32.95	34.94	0	98	41	0	0	32.95	34.94	43	0	0	29.03	28.59	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1030	10.78	ppm		0	0.964										46053.865
+5	2_Ethylhexanal	Target	0	57	Not Identified									8.67																																						1.83														19798.263
+6	3_Methylapopinene	Target	0	93	8.229	8.157	8.323	3.64	352262	96763	0	Auto	28	8.193						0	0	37.61	36.49	0	97	92	0	0	37.61	36.49	91	0	0	35.12	33.59	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	924	32.25	ppm		0	1.187										3000.75
+7	"4_Carene, (1S,3R,6R)_(_)_ "	Target	0	93	Not Identified									8.213																																						32.25														3000.75
+8	"Acetate <hexyl_, 2_ethyl_>"	Target	0	43	12.292	12.273	12.32	1.29	33863	26344	0	Auto	36	12.277						0	0	55.25	71.01	0	89	70	0	0	55.25	71.01	57	0	0	53.38	44.48	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1148	1.46	ppm		0	1.135										18012.5
+9	Acetophenone	Target	0	105	10.985	10.947	11.043	1.9	231132	121340	0	Auto	44	10.963						0	0	65.02	67.97	0	94	77	0	0	65.02	67.97	120	0	0	32.2	30.39	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1072	19.29	ppm		0	1.015										6289.235
+10	Artemisia acetate	Target	0	127	Not Identified									12.597																																						2.66														2253
+11	Artemisia alcohol	Target	0	86	Not Identified									11.25																																						0.57														5708.358
+12	Artemisia ketone	Target	0	84	Not Identified									10.833																																						6.32														9616.8
+13	Benmoxin 	Target	0	105	8.844	8.787	8.873	2.46	96902	39413	0	Auto	62	8.827						0	0	40.95	36.54	0	91	120	0	0	40.95	36.54	91	0	0	10.44	10.66	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	957	33.46	ppm		0	0.816										1177.9
+14	Benzaldehyde	Target	0	105	8.925	8.873	8.983	3	552180	183871	0	Auto	68	8.9						0	0	93.36	99.71	0	90	106	0	0	93.36	99.71	77	0	0	81.19	94.3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	962	156.1	ppm		0	1.058										1177.9
+15	Benzaldehyde <para_ethoxy_>	Target	0	121	15.266	15.237	15.303	1.54	15844	10319	0	Auto	72	15.243						0	0	42.72	28.91	0	88	150	0	0	42.72	28.91	122	0	0	22.01	16.17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1344	10.97	ppm		0	1.138										940.931
+16	"Benzene <1,4_diacetyl_>"	Target	0	147	16.63	16.597	16.67	1.47	226999	154616	0	Auto	77	16.617						0	0	38.95	37.24	0	98	91	0	0	38.95	37.24	43	0	0	30.63	29.81	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1445	67.56	ppm		0	1.029										2288.708
+17	Benzoate <ethyl_>	Target	0	105	12.771	12.74	12.803	1.43	58932	41203	0	Auto	83	12.747						0	0	42.21	39.63	0	96	77	0	0	42.21	39.63	122	0	0	32.39	32.93	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1177	19.01	ppm		0	0.99										2167.514
+18	Benzyl alcohol 	Target	0	79	10.363	10.317	10.433	2	761835	380547	0	Auto	88	10.343						0	0	92.53	92.29	0	98	108	0	0	92.53	92.29	107	0	0	61.78	61.66	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1039	61.32	ppm		0	0.997										6206.323
+19	Borneol	Target	0	95	12.843	12.813	12.877	1.54	69565	45132	0	Auto	93	12.847						0	0	29.19	19.12	0	87	110	0	0	29.19	19.12	41	0	0	18.91	10.24	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1182	24.36	ppm		0	1.1										1852.698
+20	Camphene	Target	0	93	Not Identified									8.64																																						95.93														1008.512
+21	Camphor	Target	0	95	Not Identified									12.437																																						1.29														1852.698
+22	Caparratriene	Target	0	95	Not Identified									16.333																																						1.2														1684.935
+23	"Carbonic acid, eicosyl vinyl ester"	Target	0	57	Not Identified									10.287																																						2														41433.791
+24	Carvone	Target	0	82	Not Identified									13.953																																						5.93														2010.813
+25	Carvyl acetate <cis_>	Target	0	84	Not Identified									15.537																																						2.23														6146.063
+26	Caryophyllene <beta_>	Target	0	93	16.41	16.383	16.437	1.43	17954	12521	0	Auto	128	16.507						0	0	81.49	67.02	0	87	133	0	0	81.49	67.02	41	0	0	77.07	76.54	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1428	6.8	ppm		0	0.99										1840.8
+27	Caryophyllene <E_>	Target	0	93	16.41	16.383	16.437	1.43	17954	12521	0	Auto	133	16.5						0	0	82.89	67.02	0	87	133	0	0	82.89	67.02	41	0	0	82.36	76.54	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1428	6.8	ppm		0	0.99										1840.8
+28	Cymene <para_>	Target	0	119	10.156	10.087	10.207	2.06	98518	47914	0	Auto	138	10.167						0	0	70.67	33.75	0	77	134	0	0	70.67	33.75	91	0	0	55.9	24.8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1028	22.36	ppm		0	0.915										2143.241
+29	"Dihydrocarveol <1,6_>"	Target	0	59	13.183	13.12	13.2	1.46	6598	4515	0	Auto	143	13.177						0	0	63.31	71.68	0	85	93	0	0	63.31	71.68	136	0	0	43.56	52.33	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1202	2.2	ppm		0	0.834										2048.692
+30	"Dihydrojasmonate <methyl_, cis_>"	Target	0	83	Not Identified									19.25																																						0.69														6462.976
+31	Dihydromyrcenol	Target	0	59	Not Identified									10.99																																						1.58														5924.864
+32	Eucalyptol	Target	0	43	Not Identified									10.33																																						0.71														30724.909
+33	Guaiene <alpha_>	Target	0	105	Not Identified									16.407																																						3.67														3415.612
+34	Hept_5_en_2_one <6_methyl_>	Target	0	43	9.345	9.307	9.397	2.21	187185	84778	0	Auto	169	9.33						0	0	55.18	52.52	0	97	41	0	0	55.18	52.52	108	0	0	45.6	45.22	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	984	1.3	ppm		0	1.13										65069.292
+35	Heptanone<5_methyl_3_>	Target	0	43	8.387	8.347	8.477	3.32	203559	61367	0	Auto	173	8.387						0	0	83.35	57.87	0	83	57	0	0	83.35	57.87	71	0	0	64.09	31	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	933	0.54	ppm		0	1.299										114278.421
+36	Hex_(3Z)_enyl acetate	Target	0	43	Not Identified									9.737																																						2.43														65069.292
+37	"Hexanal, 2_ethyl_ "	Target	0	57	Not Identified									8.69																																						1.83														19798.263
+38	Hydroxy citronellyl tiglate	Target	0	83	8.789	8.747	8.83	2.32	11588	5002	0	Auto	189	8.757						0	0	99.69	128.73	0	80	43	0	0	99.69	128.73	55	0	0	85.85	107.36	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	954	2.29	ppm		0	0.978										2181.645
+39	Hydroxycitronellol	Target	0	59	Not Identified									15.4																																						4.19														1536.308
+40	Indan_5_ol	Target	0	133	15.109	15.08	15.143	1.39	37589	26991	0	Auto	196	15.093						0	0	81.52	76.25	0	95	162	0	0	81.52	76.25	134	0	0	52.9	50.74	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1333	0.58	ppm		0	1.022										46618.667
+41	Indane 	Target	0	117	Not Identified									10.347																																						1.53														6762.375
+42	Isopropyl myristate 	Target	0	43	Not Identified									21.08																																						1.46														4211.07
+43	Isopropyl palmitate 	Target	0	43	23.127	23.107	23.153	1.18	14329	12143	0	Auto	213	23.11						0	0	77.54	73.03	0	95	60	0	0	77.54	73.03	102	0	0	75.54	73.66	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2023	1.68	ppm		0	1.022										7247.59
+44	Limonene	Target	0	68	10.242	10.217	10.283	1.93	80921	41896	0	Auto	217	10.267						0	0	77.6	75.98	0	90	93	0	0	77.6	75.98	67	0	0	72.7	74.64	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1032	9.94	ppm		0	1.119										4212.973
+45	"Linalool <ethyl_, (E)_>"	Target	0	55	Not Identified									13.07																																						8.21														15117.6
+46	Linalool isobutyrate	Target	0	93	10.538	10.5	10.583	1.79	64898	36219	0	Auto	228	10.527						0	0	63.02	54.43	0	89	43	0	0	63.02	54.43	41	0	0	54.41	31.08	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1048	18.06	ppm		0	1.036										2005.304
+47	Linalyl acetate	Target	0	93	Not Identified									8.193																																						32.25														3000.75
+48	Longifolene_(V4)	Target	0	57	Not Identified									15.893																																						1.14														23554.768
+49	Maaliene <gamma_>	Target	0	161	16.408	16.38	16.437	1.41	21526	15248	0	Auto	245	16.39						0	0	88.61	69.52	0	96	105	0	0	88.61	69.52	94	0	0	86.94	91.58	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1428	9.8	ppm		0	1.089										1556.065
+50	Menthol	Target	0	71	13.283	13.253	13.31	1.38	127598	92798	0	Auto	249	12.87						0	0	96.12	57.05	0	78	81	0	0	96.12	57.05	95	0	0	84.81	51.52	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1209	4.23	ppm		0	1.021										21917.8
+51	Mesitylene	Target	0	105	9.543	9.49	9.74	2.26	136608	60553	0	Auto	253	9.52						0	0	49.28	49.51	0	90	120	0	0	49.28	49.51	119	0	0	10.57	5.98	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	995	2.38	ppm		0	0.957										25416.333
+52	Methyl oxalate	Target	0	59	9.863	9.807	9.96	2.62	258751	98636	0	Auto	258	9.863						0	0	13.53	13.29	0	95	31	0	0	13.53	13.29	45	0	0	10.44	10.82	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1012	25.38	ppm		0	1.515										3885.789
+53	Myrcene	Target	0	69	9.204	9.157	9.263	2.91	81526	28017	0	Auto	261	9.447						0	0	99.94	91.47	0	76	93	0	0	99.94	91.47	41	0	0	99.93	97.03	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	977	5.14	ppm		0	1.11										5453.755
+54	Myroxide 	Target	0	79	Not Identified									12.183																																						3.84														1564.481
+55	"Nicotinonitrile, 1_ethyl_1,4_dihydro_ "	Target	0	133	13.551	13.517	13.587	1.45	157766	108973	0	Auto	274	13.537						0	0	86.32	81.42	0	95	134	0	0	86.32	81.42	105	0	0	58.1	57.37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1227	39.42	ppm		0	1.084										2764.429
+56	Nonanal 	Target	0	57	11.613	11.587	11.65	1.52	737803	485562	0	Auto	279	11.593						0	0	70.64	72.65	0	99	41	0	0	70.64	72.65	56	0	0	63.27	61.4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1107	12.31	ppm		0	0.991										39445.5
+57	Palmitate <ethyl_>	Target	0	88	Not Identified									22.83																																						21.97														527.743
+58	Pelargol	Target	0	69	11.053	11.017	11.09	1.67	117431	70152	0	Auto	288	11.03						0	0	77.69	70.89	0	97	57	0	0	77.69	70.89	43	0	0	74.01	67.99	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1076	4.98	ppm		0	1.044										14084.794
+59	Phenethyl alcohol	Target	0	91	11.807	11.777	11.83	1.63	7619	4668	0	Auto	294	11.783						0	0	60.52	68.5	0	89	92	0	0	60.52	68.5	122	0	0	27.31	22.94	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1119	1.91	ppm		0	0.842										2448.914
+60	Phenethyl isocyanate 	Target	0	91	19.01	18.987	19.043	1.53	56670	36945	0	Auto	298	18.993						0	0	20.07	22.39	0	94	105	0	0	20.07	22.39	147	0	0	16.25	17.12	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1637	10.78	ppm		0	1.021										3428.696
+61	Phytone	Target	0	43	21.316	21.3	21.35	1.45	19933	13700	0	Auto	304	21.31						0	0	90.79	93.88	0	93	58	0	0	90.79	93.88	71	0	0	53.08	38.15	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1844	3.25	ppm		0	1.546										4211.07
+62	Pinene <alpha_>	Target	0	93	8.229	8.157	8.323	3.64	352262	96763	0	Auto	307	8.27						0	0	40.31	36.49	0	94	92	0	0	40.31	36.49	91	0	0	39.27	33.59	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	924	32.25	ppm		0	1.187										3000.75
+63	Sabinene	Target	0	93	Not Identified									9.117																																						1.14														7617.902
+64	Sabinene hydrate <cis_>	Target	0	43	Not Identified									11.037																																						5.4														59062.746
+65	Sabinol isovalerate 	Target	0	91	17.943	17.913	17.973	1.43	52368	36726	0	Auto	324	17.923						0	0	25.57	28.05	0	90	133	0	0	25.57	28.05	105	0	0	11.68	12.19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1548	6.42	ppm		0	1.029										5719.2
+66	Salicylate <2_ethylhexyl_>	Target	0	120	21.014	20.993	21.047	1.6	3925	2455	0	Auto	328	21						0	0	97.24	133.58	0	81	178	0	0	97.24	133.58	138	0	0	75.79	61.23	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1815	2.46	ppm		0	1.226										998.06
+67	Salicylate <hexyl_>	Target	0	120	19.636	19.603	19.67	1.37	12633	9221	0	Auto	335	19.617						0	0	45.07	35.55	0	84	138	0	0	45.07	35.55	121	0	0	24.18	26.14	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1690	14.49	ppm		0	1.057										636.515
+68	Salicylate <methyl_>	Target	0	120	13.164	13.097	13.19	1.48	30363	20485	0	Auto	337	13.153						0	0	57.38	51.24	0	87	92	0	0	57.38	51.24	152	0	0	50.95	45.53	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1201	37.02	ppm		0	1.018										553.316
+69	Stearate <ethyl_>	Target	0	88	Not Identified									24.72																																						2.45														489.333
+70	"Succinic acid, 2,2_dimethylpent_3_yl 2_methylhex_3_yl ester"	Target	0	99	Not Identified									10.123																																						1.36														3557.357
+71	Terpineol <alpha_>	Target	0	59	13.183	13.12	13.2	1.46	6598	4515	0	Auto	353	13.173						0	0	53.01	71.68	0	82	93	0	0	53.01	71.68	136	0	0	43.77	52.33	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1202	2.2	ppm		0	0.834										2048.692
+72	Thujene <alpha_>	Target	0	93	8.229	8.157	8.323	3.64	352262	96763	0	Auto	358	8.2						0	0	38.17	36.49	0	98	92	0	0	38.17	36.49	91	0	0	34.72	33.59	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	924	32.25	ppm		0	1.187										3000.75
+73	Thujone <beta_>	Target	0	110	Not Identified									11.877																																						0.68														830.4
+74	Toscanol	Target	0	121	15.266	15.237	15.303	1.54	15844	10319	0	Auto	367	15.447						0	0	32.37	0.48	0	76	162	0	0	32.37	0.48	134	0	0	27.93	3.09	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1344	7.24	ppm		0	1.138										1424.6
+75	trans_Geranylacetone	Target	0	43	16.727	16.71	16.747	1.15	27055	23439	0	Auto	372	16.72						0	0	41.53	48.97	0	94	69	0	0	41.53	48.97	41	0	0	34.31	29.18	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1452	0.84	ppm		0	1.016										27749.431
+76	trans_Sesquisabinene hydrate 	Target	0	85	Not Identified									18.883																																						1.06														9320.942
+77	Unknown_KI_943	Target	0	95	Not Identified									8.573																																						3.22														1690.656
+78	"Vanillin, 2_methylpropyl ether"	Target	0	151	Not Identified									16.15																																						2.82														817.198
+79	"Vanillin, isopropyl ether"	Target	0	151	Not Identified									16.16																																						1.83														817.198
+80	Verdyl acetate	Target	0	66	Not Identified									16.467																																						1.2														1043.477

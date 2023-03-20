@@ -1,0 +1,22 @@
+Package: SEmisc
+Title: Silvia Eckert Miscellaneous
+Version: 0.1.0
+Authors@R: 
+    person("Silvia", "Eckert", , "silvia.eckert@uni-bielefeld.de", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8896-1046"))
+Description: Contains miscellaneous helper functions and parsers.
+Depends:
+	R (>= 4.2)
+Imports:
+	stringi (>= 1.7),
+	stringr (>= 1.5),
+	dplyr (>= 1.1),
+	readr (>= 2.1),
+	reshape2 (>= 1.4),
+	tibble (>= 3.1)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Author: Silvia Eckert (<https://orcid.org/0000-0002-8896-1046>)
+Maintainer: Silvia Eckert <silvia.eckert@uni-bielefeld.de>
