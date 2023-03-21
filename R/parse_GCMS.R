@@ -6,6 +6,7 @@
 #' @param file A string containing the name of the output file after batch processing. If not renamed, the default file name suggested by the software will be "ASCIIData.txt".
 #' @param samples An integer giving the number of samples analyzed.
 #' @param compounds An integer giving the number of compounds scored (as shown in the compound table of the method file).
+#' @param ISTD Logical. Should peak areas be standardized based on the internal standard? For this purpose, the name of the compound used as an internal standard should contain "ISTD" as an identifier. The standardization is only applied to the wide-format table.
 #' @param results_file A string giving the file name to save the tidy output.
 #' @param ref_ions An integer giving the number of reference ions (m/z) to add (default is three, maximum is five).
 #' @param save_as_textfiles Logical. Should the cleaned output be saved in the working directory? `FALSE` by default.
@@ -18,10 +19,11 @@
 #' @examples
 #' # example output file
 #' \dontrun{
-#' tidy_output <- parse_GCMSsolution(system.file(package="SEmisc",
-#'                                     "extdata/example_batchprocessing_GCMSsolution.txt"),
+#' tidy_output <- parse_GCMS(system.file(package="SEmisc",
+#'                                     "extdata/example_batchprocessing_GCMS.txt"),
 #'                                     samples = 3,
 #'                                     compounds = 80,
+#'                                     ISTD = F,
 #'                                     results_file = "tidy_output",
 #'                                     ref_ions = 3,
 #'                                     save_as_textfiles = F)
@@ -29,12 +31,13 @@
 #' tidy_output[[2]] # tidy output in long format
 #' tidy_output[[3]] # tidy compound summary}
 
-parse_GCMSsolution <- function(file,
-                               samples,
-                               compounds,
-                               results_file,
-                               ref_ions = 3,
-                               save_as_textfiles = F){
+parse_GCMS <- function(file,
+                       samples,
+                       compounds,
+                       ISTD = F,
+                       results_file,
+                       ref_ions = 3,
+                       save_as_textfiles = F){
   skip_rows = 8
   df_temp <- readr::read_file(file)
   df_temp <- gsub(" ", "_", df_temp)
@@ -107,13 +110,32 @@ parse_GCMSsolution <- function(file,
   df_unlist <- dplyr::bind_rows(df_list, .id = "Sample")
   df_cast <- reshape2::dcast(df_unlist[c("Sample",
                                          "Compound",
-                                         "Peak_Area")],#,,-c(3,4,6,7)],
+                                         "Peak_Area")],
                              Sample ~ Compound,
                              value.var = "Peak_Area",
                              fun.aggregate=NULL)
   df_cast[is.na(df_cast)] <- 0
   df_cast <- df_cast[, colSums(df_cast != 0) > 0]
-  df_final <- df_cast
+  if(ISTD == F){
+    df_final <- df_cast
+    standardisation_text <- "Peak areas in the wide-format table have not been standardised by an internal standard."
+  } else{
+    if(df_cast %>% names %>% stringr::str_detect("ISTD") %>% any() == F){
+      stop("No column with internal standard detected. Did you forget to add the ISTD identifier to the respective compound name?")
+    } else{
+    df_ISTD <- df_cast %>% 
+      select(-.data$Sample) %>% 
+      relocate(contains("ISTD"))
+    m_ISTD <- as.matrix(df_ISTD)
+    m_standardised <- apply(m_ISTD, 1, function(x) (x)/x[1])
+    df_standardised <- as.data.frame(t(m_standardised)) %>% 
+      mutate(Sample = df_cast$Sample) %>% 
+      relocate(.data$Sample) %>% 
+      select(-contains("ISTD"))
+    df_final <- df_standardised
+    standardisation_text <- "Peak areas in the wide-format table have been standardised by the respective internal standard."
+    }
+  }
   if(save_as_textfiles == T){
     utils::write.table(df_final,
                        paste0(results_file, "_WideFormat.txt"), row.names=F, sep="\t")
@@ -133,7 +155,8 @@ parse_GCMSsolution <- function(file,
     dplyr::ungroup()
   cat(paste0(tidy_output_text,
              "In total, ", dim(df_summary)[1], " out of ", compounds, " compounds detected after batch processing of ",
-             length(unique(df_unlist$Sample)), " samples."))
+             length(unique(df_unlist$Sample)), " samples.\n",
+             standardisation_text))
   file.remove(temp)
   return(list(tibble::tibble(df_final),
               tibble::tibble(df_unlist),

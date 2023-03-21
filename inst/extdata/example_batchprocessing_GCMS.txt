@@ -49,7 +49,7 @@ ID#	Name	Type	ISTD Group#	Mass	Ret.Time	Start Time	End Time	A/H	Area	Height	Conc
 41	Indane 	Target	0	117	10.376	10.327	10.423	1.98	258439	130522	0	Auto	203	10.347						0	0	60.69	61.2	0	90	118	0	0	60.69	61.2	79	0	0	40.55	14.75	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1040	18.08	ppm		0	0.969										7217.471
 42	Isopropyl myristate 	Target	0	43	Not Identified									21.08																																						2.67														8728.8
 43	Isopropyl palmitate 	Target	0	43	Not Identified									23.11																																						0.49														7653.2
-44	Limonene	Target	0	68	10.243	10.157	10.29	2.14	1303261	609826	0	Auto	219	10.267						0	0	77.6	72.62	0	97	93	0	0	77.6	72.62	67	0	0	72.7	72.32	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1032	60.94	ppm		0	0.756										10006.744
+44	Limonene_ISTD	Target	0	68	10.243	10.157	10.29	2.14	1303261	609826	0	Auto	219	10.267						0	0	77.6	72.62	0	97	93	0	0	77.6	72.62	67	0	0	72.7	72.32	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1032	60.94	ppm		0	0.756										10006.744
 45	"Linalool <ethyl_, (E)_>"	Target	0	55	Not Identified									13.07																																						1.21														30851.917
 46	Linalool isobutyrate	Target	0	93	10.537	10.503	10.567	1.65	27811	16840	0	Auto	228	10.527						0	0	63.02	62.31	0	87	43	0	0	63.02	62.31	41	0	0	54.41	40.81	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1048	1.73	ppm		0	0.929										9712.474
 47	Linalyl acetate	Target	0	93	Not Identified									8.193																																						19.13														10428.857
@@ -138,7 +138,7 @@ ID#	Name	Type	ISTD Group#	Mass	Ret.Time	Start Time	End Time	A/H	Area	Height	Conc
 41	Indane 	Target	0	117	Not Identified									10.347																																						0.26														7517.488
 42	Isopropyl myristate 	Target	0	43	Not Identified									21.08																																						1.78														17148
 43	Isopropyl palmitate 	Target	0	43	23.127	23.103	23.167	1.53	34777	22791	0	Auto	213	23.11						0	0	77.54	73.31	0	97	60	0	0	77.54	73.31	102	0	0	75.54	73.84	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2023	0.78	ppm		0	1.313										29129.324
-44	Limonene	Target	0	68	10.243	10.223	10.283	1.78	53528	30141	0	Auto	218	10.267						0	0	77.6	93.59	0	82	93	0	0	77.6	93.59	67	0	0	72.7	69.69	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1032	5.31	ppm		0	1.246										5679.261
+44	Limonene_ISTD	Target	0	68	10.243	10.223	10.283	1.78	53528	30141	0	Auto	218	10.267						0	0	77.6	93.59	0	82	93	0	0	77.6	93.59	67	0	0	72.7	69.69	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1032	5.31	ppm		0	1.246										5679.261
 45	"Linalool <ethyl_, (E)_>"	Target	0	55	Not Identified									13.07																																						1.4														103342.716
 46	Linalool isobutyrate	Target	0	93	Not Identified									10.527																																						2.01														6723.036
 47	Linalyl acetate	Target	0	93	Not Identified									8.193																																						57.19														2432.2
@@ -227,7 +227,7 @@ ID#	Name	Type	ISTD Group#	Mass	Ret.Time	Start Time	End Time	A/H	Area	Height	Conc
 41	Indane 	Target	0	117	Not Identified									10.347																																						1.53														6762.375
 42	Isopropyl myristate 	Target	0	43	Not Identified									21.08																																						1.46														4211.07
 43	Isopropyl palmitate 	Target	0	43	23.127	23.107	23.153	1.18	14329	12143	0	Auto	213	23.11						0	0	77.54	73.03	0	95	60	0	0	77.54	73.03	102	0	0	75.54	73.66	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2023	1.68	ppm		0	1.022										7247.59
-44	Limonene	Target	0	68	10.242	10.217	10.283	1.93	80921	41896	0	Auto	217	10.267						0	0	77.6	75.98	0	90	93	0	0	77.6	75.98	67	0	0	72.7	74.64	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1032	9.94	ppm		0	1.119										4212.973
+44	Limonene_ISTD	Target	0	68	10.242	10.217	10.283	1.93	80921	41896	0	Auto	217	10.267						0	0	77.6	75.98	0	90	93	0	0	77.6	75.98	67	0	0	72.7	74.64	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1032	9.94	ppm		0	1.119										4212.973
 45	"Linalool <ethyl_, (E)_>"	Target	0	55	Not Identified									13.07																																						8.21														15117.6
 46	Linalool isobutyrate	Target	0	93	10.538	10.5	10.583	1.79	64898	36219	0	Auto	228	10.527						0	0	63.02	54.43	0	89	43	0	0	63.02	54.43	41	0	0	54.41	31.08	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1048	18.06	ppm		0	1.036										2005.304
 47	Linalyl acetate	Target	0	93	Not Identified									8.193																																						32.25														3000.75
