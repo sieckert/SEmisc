@@ -10,6 +10,7 @@
 #' @return A list of tidy data frames of standardized data and, optionally, the original data. Additionally, the list returns information on what samples where ISTD was not detected.
 #' @importFrom utils write.table
 #' @importFrom sjmisc is_empty
+#' @importFrom tibble tibble
 #' @importFrom here here
 #' @importFrom stringi stri_rand_strings
 #' @importFrom purrr set_names
@@ -24,20 +25,20 @@
 #' set.seed(123)
 #' df <- data.frame(replicate(10, sample(1:10000, 100, T))) %>%
 #' purrr::set_names(wakefield::name(10)) %>%
-#' mutate(Sample = stringi::stri_rand_strings(100, 5),
+#' dplyr::mutate(Sample = stringi::stri_rand_strings(100, 5),
 #'        Treatment = sample(LETTERS[1:3], 100, T),
 #'        compound_ISTD = sample(c(NA, 100:120), 100, T),
 #'        .before = everything(.)) %>%
-#'        tibble(); df
+#' tibble::tibble(); df
 #'
 #' # standardize example data
-#' standardised_output <- ISTD(data,
-#'                             remove_ISTD = F,
-#'                             show_original = T,
-#'                             save_as_textfile = F)
-#' dframe_ISTD$standardised_data
-#' dframe_ISTD$original_data
-#' dframe_ISTD$no_ISTD
+#' output <- ISTD(df,
+#'                remove_ISTD = F,
+#'                show_original = T,
+#'                save_as_textfile = F)
+#' output$standardised_data
+#' output$original_data
+#' output$no_ISTD
 #' }
 
 ISTD <- function(data,
@@ -77,27 +78,31 @@ ISTD <- function(data,
     cat("Standardised output generated but not saved as text file.\n")
   }
   if(is_empty(data %>%
-     select(contains("ISTD")) %>%
-     filter(if_any(matches("ISTD"), ~ . == 0) |
-            if_any(matches("ISTD"), ~ is.na(.data))) %>%
-     pull(),
+              select(.data$Sample,
+                     contains("ISTD")) %>%
+              filter_all(any_vars(is.na(.))) %>%
+              select(.data$Sample) %>%
+              pull(),
      all.na.empty = F) == F){
-    cat("ISTD not detected in the following samples:",
-        paste0(no_ISTD <- data %>%
-          select(.data$Sample,
-                 contains("ISTD")) %>%
-          filter(if_any(matches("ISTD"), ~ . == 0) |
-                   if_any(matches("ISTD"), ~ is.na(.data))) %>%
-          select(.data$Sample) %>%
-          pull()
-    ), "\n\n")
+    no_ISTD <- data %>%
+      select(.data$Sample,
+             contains("ISTD")) %>%
+      filter_all(any_vars(is.na(.))) %>%
+      select(.data$Sample) %>%
+      pull()
+    ISTD_text <- paste0("ISTD not detected in the following samples: ",
+                        paste0(no_ISTD, collapse=", "), collapse = "")
+    cat(ISTD_text, "\n")
+  } else{
+    ISTD_text <- "ISTD was detected in all samples."
+    cat(ISTD_text, "\n")
   }
   if(show_original == T){
     return(list(standardised_data = df_standardised,
                 original_data = data,
-                no_ISTD = no_ISTD))
+                no_ISTD = ISTD_text))
   } else {
     return(list(standardised_data = df_standardised,
-                no_ISTD = no_ISTD))
+                no_ISTD = ISTD_text))
   }
 }
