@@ -80,14 +80,14 @@ ISTD <- function(data,
   if(is_empty(data %>%
               select(.data$Sample,
                      contains("ISTD")) %>%
-              filter_all(any_vars(is.na(.))) %>%
+              filter_all(any_vars(is.na(.data))) %>%
               select(.data$Sample) %>%
               pull(),
      all.na.empty = F) == F){
     no_ISTD <- data %>%
       select(.data$Sample,
              contains("ISTD")) %>%
-      filter_all(any_vars(is.na(.))) %>%
+      filter_all(any_vars(is.na(.data))) %>%
       select(.data$Sample) %>%
       pull()
     ISTD_text <- paste0("ISTD not detected in the following samples: ",

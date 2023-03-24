@@ -27,19 +27,19 @@ This function standardizes a given data frame based on an internal standard (IST
 set.seed(123)
 df <- data.frame(replicate(10, sample(1:10000, 100, T))) \%>\%
 purrr::set_names(wakefield::name(10)) \%>\%
-mutate(Sample = stringi::stri_rand_strings(100, 5),
+dplyr::mutate(Sample = stringi::stri_rand_strings(100, 5),
        Treatment = sample(LETTERS[1:3], 100, T),
        compound_ISTD = sample(c(NA, 100:120), 100, T),
        .before = everything(.)) \%>\%
-       tibble(); df
+tibble::tibble(); df
 
 # standardize example data
-standardised_output <- ISTD(data,
-                            remove_ISTD = F,
-                            show_original = T,
-                            save_as_textfile = F)
-dframe_ISTD$standardised_data
-dframe_ISTD$original_data
-dframe_ISTD$no_ISTD
+output <- ISTD(df,
+               remove_ISTD = F,
+               show_original = T,
+               save_as_textfile = F)
+output$standardised_data
+output$original_data
+output$no_ISTD
 }
 }
