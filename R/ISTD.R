@@ -9,6 +9,7 @@
 #' @param save_as_textfile Logical. Should the standardized output be saved in the working directory? `FALSE` by default.
 #' @return A list of tidy data frames of standardized data and, optionally, the original data. Additionally, the list returns information on what samples where ISTD was not detected.
 #' @importFrom rlang .data
+#' @importFrom stats complete.cases
 #' @importFrom utils write.table
 #' @importFrom sjmisc is_empty
 #' @importFrom tibble tibble
