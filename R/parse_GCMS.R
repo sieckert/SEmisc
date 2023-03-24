@@ -125,9 +125,8 @@ parse_GCMS <- function(file,
       stop("No column with internal standard detected. Did you forget to add the ISTD identifier to the respective compound name?")
     } else{
       df_ISTD <- df_cast %>%
-        ISTD(.data, remove_ISTD = T,
-             show_original = F,
-             save_as_textfile = F)
+        ISTD(remove_ISTD = T,
+             show_original = F)
       df_standardised <- df_ISTD$standardised_data
       df_final <- df_standardised
       standardisation_text <- "Peak areas in the wide-format table have been standardised by the respective internal standard."
