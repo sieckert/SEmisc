@@ -40,7 +40,7 @@
 #'                save_as_textfile = F)
 #' output$standardised_data
 #' output$original_data
-#' output$no_ISTD
+#' output$ISTD_info
 #' }
 
 ISTD <- function(data,
