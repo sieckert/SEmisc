@@ -92,9 +92,9 @@ ISTD <- function(data,
   if(show_original == T){
     return(list(standardised_data = df_standardised,
                 original_data = data,
-                no_ISTD = ISTD_text))
+                ISTD_info = ISTD_text))
   } else {
     return(list(standardised_data = df_standardised,
-                no_ISTD = ISTD_text))
+                ISTD_info = ISTD_text))
   }
 }
