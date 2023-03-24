@@ -26,8 +26,8 @@ This function standardizes a given data frame based on an internal standard (IST
 # generate example data
 set.seed(123)
 df <- data.frame(replicate(10, sample(1:10000, 100, T))) \%>\%
-set_names(name(10)) \%>\%
-mutate(Sample = stri_rand_strings(100, 5),
+purrr::set_names(wakefield::name(10)) \%>\%
+mutate(Sample = stringi::stri_rand_strings(100, 5),
        Treatment = sample(LETTERS[1:3], 100, T),
        compound_ISTD = sample(c(NA, 100:120), 100, T),
        .before = everything(.)) \%>\%
