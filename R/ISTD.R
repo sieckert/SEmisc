@@ -13,6 +13,7 @@
 #' @importFrom here here
 #' @importFrom stringi stri_rand_strings
 #' @importFrom purrr set_names
+#' @importFrom dplyr select
 #' @importFrom wakefield name
 #' @importFrom magrittr %>%
 #' @export
