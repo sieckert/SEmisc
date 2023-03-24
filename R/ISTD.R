@@ -9,9 +9,13 @@
 #' @param save_as_textfile Logical. Should the standardized output be saved in the working directory? `FALSE` by default.
 #' @return A list of tidy data frames of standardized data and, optionally, the original data. Additionally, the list returns information on what samples where ISTD was not detected.
 #' @importFrom utils write.table
+#' @importFrom sjmisc is_empty
+#' @importFrom here here
+#' @importFrom magrittr %>%
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' # generate example data
 #' set.seed(123)
 #' df <- data.frame(replicate(10, sample(1:10000, 100, T))) %>%
@@ -30,6 +34,7 @@
 #' dframe_ISTD$standardised_data
 #' dframe_ISTD$original_data
 #' dframe_ISTD$no_ISTD
+#' }
 
 ISTD <- function(data,
                  remove_ISTD = F,
@@ -45,7 +50,7 @@ ISTD <- function(data,
     m_ISTD <- as.matrix(df)
     m_standardised <- apply(m_ISTD, 1, function(x) (x)/x[1])
     df_standardised <- as.data.frame(t(m_standardised)) %>%
-      mutate(meta, .before=everything(.)) %>%
+      mutate(meta, .before=everything(.data)) %>%
       select(-contains("ISTD")) %>%
       as_tibble()
   } else{
@@ -56,7 +61,7 @@ ISTD <- function(data,
     m_ISTD <- as.matrix(df)
     m_standardised <- apply(m_ISTD, 1, function(x) (x)/x[1])
     df_standardised <- as.data.frame(t(m_standardised)) %>%
-      mutate(meta, .before=everything(.)) %>%
+      mutate(meta, .before=everything(.data)) %>%
       as_tibble()
   }
   if(save_as_textfile == T){
@@ -70,7 +75,7 @@ ISTD <- function(data,
   if(is_empty(data %>%
      select(contains("ISTD")) %>%
      filter(if_any(matches("ISTD"), ~ . == 0) |
-            if_any(matches("ISTD"), ~ is.na(.))) %>%
+            if_any(matches("ISTD"), ~ is.na(.data))) %>%
      pull(),
      all.na.empty = F) == F){
     cat("ISTD not detected in the following samples:",
@@ -78,7 +83,7 @@ ISTD <- function(data,
           select(.data$Sample,
                  contains("ISTD")) %>%
           filter(if_any(matches("ISTD"), ~ . == 0) |
-                   if_any(matches("ISTD"), ~ is.na(.))) %>%
+                   if_any(matches("ISTD"), ~ is.na(.data))) %>%
           select(.data$Sample) %>%
           pull()
     ), "\n\n")

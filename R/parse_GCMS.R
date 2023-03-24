@@ -29,7 +29,8 @@
 #'                                     save_as_textfiles = F)
 #' tidy_output[[1]] # tidy output in wide format
 #' tidy_output[[2]] # tidy output in long format
-#' tidy_output[[3]] # tidy compound summary}
+#' tidy_output[[3]] # tidy compound summary
+#' }
 
 parse_GCMS <- function(file,
                        samples,
@@ -124,7 +125,7 @@ parse_GCMS <- function(file,
       stop("No column with internal standard detected. Did you forget to add the ISTD identifier to the respective compound name?")
     } else{
       df_ISTD <- df_cast %>%
-        ISTD(., remove_ISTD = T,
+        ISTD(.data, remove_ISTD = T,
              show_original = F,
              save_as_textfile = F)
       df_standardised <- df_ISTD$standardised_data

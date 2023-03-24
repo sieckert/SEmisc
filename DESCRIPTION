@@ -13,7 +13,10 @@ Imports:
 	dplyr (>= 1.1),
 	readr (>= 2.1),
 	reshape2 (>= 1.4),
-	tibble (>= 3.1)
+	tibble (>= 3.1),
+	sjmisc (>= 2.8),
+	here (>= 1.0),
+	magrittr (>= 2.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

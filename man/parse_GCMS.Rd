@@ -10,7 +10,7 @@ parse_GCMS(
   compounds,
   ISTD = F,
   results_file,
-  ref_ions = 3,
+  ref_ions = 0,
   save_as_textfiles = F
 )
 }
@@ -21,11 +21,11 @@ parse_GCMS(
 
 \item{compounds}{An integer giving the number of compounds scored (as shown in the compound table of the method file).}
 
-\item{ISTD}{Logical. Should peak areas be standardized based on the internal standard? For this purpose, the name of the compound used as an internal standard should contain "ISTD" as an identifier. The standardization is only applied to the wide-format table.}
+\item{ISTD}{Logical. Should peak areas be standardized based on the internal standard? For this purpose, the name of the compound used as an internal standard should contain "ISTD" as an identifier. The standardization is only applied to the wide-format table. \code{FALSE} by default.}
 
 \item{results_file}{A string giving the file name to save the tidy output.}
 
-\item{ref_ions}{An integer giving the number of reference ions (m/z) to add (default is three, maximum is five).}
+\item{ref_ions}{An integer giving the number of reference ions (m/z) to add (\code{0} by default, maximum is five).}
 
 \item{save_as_textfiles}{Logical. Should the cleaned output be saved in the working directory? \code{FALSE} by default.}
 }
@@ -48,5 +48,6 @@ tidy_output <- parse_GCMS(system.file(package="SEmisc",
                                     save_as_textfiles = F)
 tidy_output[[1]] # tidy output in wide format
 tidy_output[[2]] # tidy output in long format
-tidy_output[[3]] # tidy compound summary}
+tidy_output[[3]] # tidy compound summary
+}
 }
