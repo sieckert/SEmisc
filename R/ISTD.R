@@ -8,6 +8,7 @@
 #' @param show_original Logical. Should the original data be returned additionally? `TRUE` by default.
 #' @param save_as_textfile Logical. Should the standardized output be saved in the working directory? `FALSE` by default.
 #' @return A list of tidy data frames of standardized data and, optionally, the original data. Additionally, the list returns information on what samples where ISTD was not detected.
+#' @importFrom rlang .data
 #' @importFrom utils write.table
 #' @importFrom sjmisc is_empty
 #' @importFrom tibble tibble
@@ -50,7 +51,6 @@ ISTD <- function(data,
   if(remove_ISTD == T){
     df <- data %>%
       select_if(is.numeric) %>%
-      # select(-.data$Sample) %>%
       relocate(contains("ISTD"))
     m_ISTD <- as.matrix(df)
     m_standardised <- apply(m_ISTD, 1, function(x) (x)/x[1])
@@ -61,7 +61,6 @@ ISTD <- function(data,
   } else{
     df <- data %>%
       select_if(is.numeric) %>%
-      # select(-.data$Sample) %>%
       relocate(contains("ISTD"))
     m_ISTD <- as.matrix(df)
     m_standardised <- apply(m_ISTD, 1, function(x) (x)/x[1])
@@ -77,24 +76,16 @@ ISTD <- function(data,
   } else {
     cat("Standardised output generated but not saved as text file.\n")
   }
-  if(is_empty(data %>%
-              select(.data$Sample,
-                     contains("ISTD")) %>%
-              filter_all(any_vars(is.na(.data))) %>%
-              select(.data$Sample) %>%
-              pull(),
-     all.na.empty = F) == F){
-    no_ISTD <- data %>%
-      select(.data$Sample,
-             contains("ISTD")) %>%
-      filter_all(any_vars(is.na(.data))) %>%
+  if(sum(is.na(data[,grep("ISTD", colnames(data))])) == 0){
+    ISTD_text <- "ISTD was detected in all samples."
+    cat(ISTD_text, "\n")
+  } else{
+    no_ISTD <- data[!complete.cases(data[[grep("ISTD", names(data))]]),
+                    grep("Sample|ISTD", names(data))] %>%
       select(.data$Sample) %>%
       pull()
     ISTD_text <- paste0("ISTD not detected in the following samples: ",
                         paste0(no_ISTD, collapse=", "), collapse = "")
-    cat(ISTD_text, "\n")
-  } else{
-    ISTD_text <- "ISTD was detected in all samples."
     cat(ISTD_text, "\n")
   }
   if(show_original == T){
