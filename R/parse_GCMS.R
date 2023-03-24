@@ -6,9 +6,9 @@
 #' @param file A string containing the name of the output file after batch processing. If not renamed, the default file name suggested by the software will be "ASCIIData.txt".
 #' @param samples An integer giving the number of samples analyzed.
 #' @param compounds An integer giving the number of compounds scored (as shown in the compound table of the method file).
-#' @param ISTD Logical. Should peak areas be standardized based on the internal standard? For this purpose, the name of the compound used as an internal standard should contain "ISTD" as an identifier. The standardization is only applied to the wide-format table.
+#' @param ISTD Logical. Should peak areas be standardized based on the internal standard? For this purpose, the name of the compound used as an internal standard should contain "ISTD" as an identifier. The standardization is only applied to the wide-format table. `FALSE` by default.
 #' @param results_file A string giving the file name to save the tidy output.
-#' @param ref_ions An integer giving the number of reference ions (m/z) to add (default is three, maximum is five).
+#' @param ref_ions An integer giving the number of reference ions (m/z) to add (`0` by default, maximum is five).
 #' @param save_as_textfiles Logical. Should the cleaned output be saved in the working directory? `FALSE` by default.
 #' @return A list of tidy output from the cleaned batch processing. The first element contains a tibble with sample names as rows and the compound areas as columns. The second element contains a tibble with additional information for each samples like base peak, peak height, retention index, and retention time. The third element contains a tibble with the summary of all detected compounds listed with their base peak, and the median of their retention index and retention time.
 #' @importFrom utils write.table
@@ -36,7 +36,7 @@ parse_GCMS <- function(file,
                        compounds,
                        ISTD = F,
                        results_file,
-                       ref_ions = 3,
+                       ref_ions = 0,
                        save_as_textfiles = F){
   skip_rows = 8
   df_temp <- readr::read_file(file)
@@ -78,22 +78,22 @@ parse_GCMS <- function(file,
                            "Peak_Height",
                            "Retention_Index")
       } else {
-      df_new <- df_new[c("Name",
-                         "Mass",
-                         "Ret.Time",
-                         "Area",
-                         "Height",
-                         "Ret._Index",
-                         sprintf("Ref.Ion%s_m.z", seq(1:ref_ions)))]
-      names(df_new) <- c("Compound",
-                         "Base_Peak",
-                         "Retention_Time",
-                         "Peak_Area",
-                         "Peak_Height",
-                         "Retention_Index",
-                         sprintf("Reference_Ion_%s",seq(1:ref_ions)))
+        df_new <- df_new[c("Name",
+                           "Mass",
+                           "Ret.Time",
+                           "Area",
+                           "Height",
+                           "Ret._Index",
+                           sprintf("Ref.Ion%s_m.z", seq(1:ref_ions)))]
+        names(df_new) <- c("Compound",
+                           "Base_Peak",
+                           "Retention_Time",
+                           "Peak_Area",
+                           "Peak_Height",
+                           "Retention_Index",
+                           sprintf("Reference_Ion_%s",seq(1:ref_ions)))
       }
-      }
+    }
     label_var <- read.table(temp,
                             comment.char = "",
                             header=F, sep="\t",
@@ -123,17 +123,13 @@ parse_GCMS <- function(file,
     if(df_cast %>% names %>% stringr::str_detect("ISTD") %>% any() == F){
       stop("No column with internal standard detected. Did you forget to add the ISTD identifier to the respective compound name?")
     } else{
-    df_ISTD <- df_cast %>% 
-      select(-.data$Sample) %>% 
-      relocate(contains("ISTD"))
-    m_ISTD <- as.matrix(df_ISTD)
-    m_standardised <- apply(m_ISTD, 1, function(x) (x)/x[1])
-    df_standardised <- as.data.frame(t(m_standardised)) %>% 
-      mutate(Sample = df_cast$Sample) %>% 
-      relocate(.data$Sample) %>% 
-      select(-contains("ISTD"))
-    df_final <- df_standardised
-    standardisation_text <- "Peak areas in the wide-format table have been standardised by the respective internal standard."
+      df_ISTD <- df_cast %>%
+        ISTD(., remove_ISTD = T,
+             show_original = F,
+             save_as_textfile = F)
+      df_standardised <- df_ISTD$standardised_data
+      df_final <- df_standardised
+      standardisation_text <- "Peak areas in the wide-format table have been standardised by the respective internal standard."
     }
   }
   if(save_as_textfiles == T){
@@ -146,12 +142,14 @@ parse_GCMS <- function(file,
     tidy_output_text <- "Tidy output generated, but not saved as text files (try save_as_textfiles = T).\n"
   }
   df_summary <- df_unlist %>%
-    dplyr::filter(.data$Retention_Time != "Not_Identified") %>%
-    dplyr::mutate(Retention_Time = as.numeric(.data$Retention_Time)) %>%
+    dplyr::filter(.data$Base_Peak != "TIC",
+                  .data$Retention_Time != "Not_Identified") %>%
+    dplyr::mutate(Base_Peak = as.integer(.data$Base_Peak),
+                  Retention_Time = as.numeric(.data$Retention_Time)) %>%
     dplyr::group_by(.data$Compound) %>%
     dplyr::summarise(Base_Peak = median(.data$Base_Peak, na.rm=T),
-              Retention_Index = median(.data$Retention_Index, na.rm=T),
-              Retention_Time = median(.data$Retention_Time, na.rm=T)) %>%
+                     Retention_Index = median(.data$Retention_Index, na.rm=T),
+                     Retention_Time = median(.data$Retention_Time, na.rm=T)) %>%
     dplyr::ungroup()
   cat(paste0(tidy_output_text,
              "In total, ", dim(df_summary)[1], " out of ", compounds, " compounds detected after batch processing of ",
