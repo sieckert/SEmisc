@@ -16,7 +16,9 @@ Imports:
 	tibble (>= 3.1),
 	sjmisc (>= 2.8),
 	here (>= 1.0),
-	magrittr (>= 2.0)
+	magrittr (>= 2.0),
+	purrr (>= 1.0),
+	wakefield (>= 0.3)
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
